@@ -600,7 +600,7 @@ function gen_config_server(node)
 	local route = {
 		rules = {
 			{
-				ip_cidr = { "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" },
+				ip_cidr = { "10.0.0.0/8", "172.16.0.0/12", "192.168.2.0/24" },
 				outbound = (node.accept_lan == nil or node.accept_lan == "0") and "block" or "direct"
 			}
 		}
